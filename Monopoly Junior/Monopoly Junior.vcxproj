@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B7431FE-0B44-4AD2-8484-7AE67AB3F891}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MonopolyJunior</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Casilla.h" />
+    <ClInclude Include="CasillaEsquina.h" />
+    <ClInclude Include="CasillaImpuesto.h" />
+    <ClInclude Include="CasillaPropiedad.h" />
+    <ClInclude Include="CasillaServicio.h" />
+    <ClInclude Include="CasillaSolar.h" />
+    <ClInclude Include="CasillaTren.h" />
+    <ClInclude Include="Control.h" />
+    <ClInclude Include="Dado.h" />
+    <ClInclude Include="Banco.h" />
+    <ClInclude Include="Interfaz.h" />
+    <ClInclude Include="Jugador.h" />
+    <ClInclude Include="Librerias.h" />
+    <ClInclude Include="CasillaSuerte.h" />
+    <ClInclude Include="MazoSuerte.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="NodoMazo.h" />
+    <ClInclude Include="Tablero.h" />
+    <ClInclude Include="Tarjeta.h" />
+    <ClInclude Include="TarjetaPropiedad.h" />
+    <ClInclude Include="TarjetaServicio.h" />
+    <ClInclude Include="TarjetaSolar.h" />
+    <ClInclude Include="TarjetaSuerte.h" />
+    <ClInclude Include="TarjetaTren.h" />
+    <ClInclude Include="VectorTarjetasPropiedad.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Banco.cpp" />
+    <ClCompile Include="Casilla.cpp" />
+    <ClCompile Include="CasillaEsquina.cpp" />
+    <ClCompile Include="CasillaImpuesto.cpp" />
+    <ClCompile Include="CasillaPropiedad.cpp" />
+    <ClCompile Include="CasillaSolar.cpp" />
+    <ClCompile Include="CasillaSuerte.cpp" />
+    <ClCompile Include="CasillaTren.cpp" />
+    <ClCompile Include="CasilllaServicio.cpp" />
+    <ClCompile Include="Control.cpp" />
+    <ClCompile Include="Dado.cpp" />
+    <ClCompile Include="Interfaz.cpp" />
+    <ClCompile Include="Jugador.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MazoSuerte.cpp" />
+    <ClCompile Include="NodoMazo.cpp" />
+    <ClCompile Include="Tablero.cpp" />
+    <ClCompile Include="Tarjeta.cpp" />
+    <ClCompile Include="TarjetaPropiedad.cpp" />
+    <ClCompile Include="TarjetaServicio.cpp" />
+    <ClCompile Include="TarjetaSolar.cpp" />
+    <ClCompile Include="TarjetaSuerte.cpp" />
+    <ClCompile Include="TarjetaTren.cpp" />
+    <ClCompile Include="VectorTarjetasPropiedad.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
