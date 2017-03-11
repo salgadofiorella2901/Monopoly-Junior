@@ -24,6 +24,7 @@ private:
 	MazoSuerte *ms;
 	int cant;
 	Interfaz *intfz;
+	string nombre;
 	
 public:
 	Banco(Tablero* );//para prueba :D
